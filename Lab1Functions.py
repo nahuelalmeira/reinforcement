@@ -54,7 +54,7 @@ def SARSA_run(q, env, episodes_to_run, alpha, gamma, epsilon, random_state=None)
     # list that contains the amount of reward given to the agent in each episode
     reward_of_episode = []
 
-    for _ in range(episodes_to_run):
+    for i_episode in range(episodes_to_run):
         # an instance of an episode is run until it fails or until it reaches 200 time-steps
 
         # resets the environment, obtaining the first state observation
